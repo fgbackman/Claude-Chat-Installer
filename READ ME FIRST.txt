@@ -1,0 +1,37 @@
+CLAUDE CHAT 2.0 — INSTALL
+=========================
+
+Needs macOS 14 (Sonoma) or later. If Apple's free Command Line Tools aren't
+installed yet, the installer opens their installer; run it again afterwards.
+
+INSTALL (or update)
+  Open Terminal, paste this line and press Return:
+
+      bash ~/Developer/"Claude Chat Installer"/install.sh
+
+  (If you keep this folder somewhere else, type  bash  and a space, drag
+  install.sh into the Terminal window, and press Return.)
+
+  It builds the app (about a minute), installs it, pins it to the Dock and
+  opens it. The chat-bubble icon appears in the menu bar while it's running.
+  Your chats and API key are kept when you update.
+
+NEW IN 2.0 (see app/README.md for details)
+  - Model duel: ⌄ next to Send → Duel (⌘⇧Return)
+  - Cost preview while typing; daily limit in Settings → General
+  - Half-price mode: ⌄ → Send Later (⌥⌘Return); Tools → Half-Price Batch (⌘⇧B)
+  - Ask from anywhere: select text, press ⌥Space; ⌥⇧Space for a screen area
+  - Branches: ✎ / branch / ↻ buttons under messages
+  - Voice: mic button to dictate, speaker button to read replies aloud
+  - Presets: New Chat menu in the sidebar; edit in Settings → Presets
+
+PERMISSIONS macOS WILL ASK FOR (once per build)
+  Keychain (choose Always Allow), Microphone + Speech Recognition (when you
+  first dictate), Accessibility (for ⌥Space), Screen Recording (for ⌥⇧Space),
+  Notifications (for half-price batches).
+
+IF THE BUILD FAILS
+  Tell Claude; it reads install-log.txt from this folder.
+
+UNINSTALL
+  bash ~/Developer/"Claude Chat Installer"/uninstall.sh
